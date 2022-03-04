@@ -1,7 +1,7 @@
 ﻿           function valyuta(pair) {
                 if (document.getElementById(pair).style.display == "none") {
                     document.getElementById(pair).style.display = "block";
-                    document.getElementById(pair).innerHTML = '<div class="tradingview-widget-container">  <div id="tradingview_'+pair+'"></div>  <div class="tradingview-widget-copyright">	<b style="color:black;">График '+pair+' </b>  </div>';                
+                    document.getElementById(pair).innerHTML = '<div class="tradingview-widget-container">  <div id="tradingview_'+pair+'"></div>  <div class="tradingview-widget-copyright">	<b style="color:black;">График '+pair+' '+ timeframe +' </b>  </div>';                
                     new TradingView.widget({
                         "width": 450,
                         "height": 280,
@@ -30,7 +30,7 @@
            function kripto(pair) {
                 if (document.getElementById(pair).style.display == "none") {
                     document.getElementById(pair).style.display = "block";
-                    document.getElementById(pair).innerHTML = '<div class="tradingview-widget-container">  <div id="tradingview_'+pair+'"></div>  <div class="tradingview-widget-copyright">	<b style="color:black;">График '+pair+' </b>  </div>';                
+                    document.getElementById(pair).innerHTML = '<div class="tradingview-widget-container">  <div id="tradingview_'+pair+'"></div>  <div class="tradingview-widget-copyright">	<b style="color:black;">График '+pair+' '+ timeframe +'  </b>  </div>';                
                     new TradingView.widget({
                         "width": 450,
                         "height": 280,

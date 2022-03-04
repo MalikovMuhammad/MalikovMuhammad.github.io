@@ -3,7 +3,12 @@
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
     <script type="text/javascript" src="charts_functions.js"></script>
 	<script type="text/javascript">    
-           var timeframe = '60';	
+           var timeframe = '60';
+           function setTimefrime(newtimeframe){ 
+                timeframe = newtimeframe;
+                document.getElementById('CurrentTF').innerHTML = "Таймфрейм - "+timeframe+":";
+           }
+           
            function hide() {            
                 if (document.getElementById('pairs_col1').style.display == "none") {
                     document.getElementById('pairs_col1').style.display = "";
@@ -25,11 +30,24 @@
             <td colspan="2" style="width:40px; vertical-align: top; text-align: left; padding: 5 15 10;">
                 <input style="padding: 10 5; " id="btn_hide_pairs" type="button" value="Скрить все инструменты" onclick="hide()"/>
             </td>
+            <td style="vertical-align: top; text-align: left; padding: 10 15 10;">
+                <span id="CurrentTF">Таймфрейм - H1:</span> 
+                <input style="padding: 5; " id="" type="button" value="M" onclick="setTimefrime('M')"/>
+                <input style="padding: 5; " id="" type="button" value="W" onclick="setTimefrime('W')"/>
+                <input style="padding: 5; " id="" type="button" value="D" onclick="setTimefrime('D')"/>
+                <input style="padding: 5; " id="" type="button" value="H4" onclick="setTimefrime('H4')"/>
+                <input style="padding: 5; " id="" type="button" value="H1" onclick="setTimefrime('H1')"/>
+                <input style="padding: 5; " id="" type="button" value="M30" onclick="setTimefrime('M30')"/>
+                <input style="padding: 5; " id="" type="button" value="M15" onclick="setTimefrime('M15')"/>
+                <input style="padding: 5; " id="" type="button" value="M5" onclick="setTimefrime('M5')"/>
+                <input style="padding: 5; " id="" type="button" value="M1" onclick="setTimefrime('M1')"/> 
+                <em>&nbsp;&nbsp;После изменния TF, надо отключить и включить график для обновления TF</em>
+            </td>
         </tr>
         <tr>
             <!-- Криптовалютные Кнопки -->
 		<td id="pairs_col1" style="display:; width: 20px; border-left: 1px dotted black; border-right: 1px dotted black; border-top: 1px dotted black; vertical-align: top; padding: 10 5 5;">			
-			<p align="center"><b>Крипты</b></p>
+			<p align="center">Крипты:</p>
 			<p><input type="button" value="BTCUSDT" onclick="kripto('BTCUSDT')"/></p>
                 	<p><input type="button" value="BCHUSDT" onclick="kripto('BCHUSDT')"/></p>
                 	<p><input type="button" value="ETHUSDT" onclick="kripto('ETHUSDT')"/></p>
@@ -70,7 +88,7 @@
 		</td>
             <!-- Валютные Кнопки -->
             <td id="pairs_col2" style="display:; width: 20px; border-right: 1px dotted black; border-top: 1px dotted black; vertical-align: top; padding: 10 5 5;">
-		<p align="center"><b>Валюты</b></p>                
+		<p align="center">Валюты:</p>                
 		<p><input type="button" value="EURUSD" onclick="valyuta('EURUSD')"/></p>            
                 <p><input type="button" value="GBPUSD" onclick="valyuta('GBPUSD')"/></p>
                 <p><input type="button" value="AUDUSD" onclick="valyuta('AUDUSD')"/></p>

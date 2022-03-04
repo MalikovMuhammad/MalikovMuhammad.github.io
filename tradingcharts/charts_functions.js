@@ -171,6 +171,44 @@
         document.getElementById('CADJPY').style.height = height;
         
         document.getElementById('CHFJPY').style.height = height;
+		
+		document.getElementById('BTCUSDT').style.height = height;
+        document.getElementById('BCHUSDT').style.height = height;
+        document.getElementById('ETHUSDT').style.height = height;
+        document.getElementById('ETCUSDT').style.height = height;
+        document.getElementById('LTCUSDT').style.height = height;
+        document.getElementById('XRPUSDT').style.height = height;
+        document.getElementById('EOSUSDT').style.height = height;
+        document.getElementById('BNBUSDT').style.height = height;
+        document.getElementById('SOLUSDT').style.height = height;
+        document.getElementById('ADAUSDT').style.height = height;
+        
+        document.getElementById('LUNAUSDT').style.height = height;
+        document.getElementById('GALAUSDT').style.height = height;
+        document.getElementById('TRXUSDT').style.height = height;
+        document.getElementById('DOTUSDT').style.height = height;
+        document.getElementById('MATICUSDT').style.height = height;
+        document.getElementById('SANDUSDT').style.height = height;
+        document.getElementById('MANAUSDT').style.height = height;
+        document.getElementById('FTMUSDT').style.height = height;
+        document.getElementById('LINKUSDT').style.height = height;
+        document.getElementById('DOGEUSDT').style.height = height;
+        
+        document.getElementById('ATOMUSDT').style.height = height;
+        document.getElementById('XLMUSDT').style.height = height;
+        document.getElementById('NEOUSDT').style.height = height;
+        document.getElementById('FILUSDT').style.height = height;
+        document.getElementById('UNIUSDT').style.height = height;
+        document.getElementById('AXSUSDT').style.height = height;
+        document.getElementById('ZECUSDT').style.height = height;
+        document.getElementById('XMRUSDT').style.height = height;
+        document.getElementById('DASHUSDT').style.height = height;
+        document.getElementById('EGLDUSDT').style.height = height;
+        
+        document.getElementById('WAVESUSDT').style.height = height;
+        document.getElementById('AAVEUSDT').style.height = height;
+        document.getElementById('XTZUSDT').style.height = height;
+        document.getElementById('FLOWUSDT').style.height = height;
     }
            
            

@@ -61,19 +61,20 @@
                 <input style="padding: 5; " id="" type="button" value="M" onclick="setTimefrime('M')"/>
                 <input style="padding: 5; " id="" type="button" value="W" onclick="setTimefrime('W')"/>
                 <input style="padding: 5; " id="" type="button" value="D" onclick="setTimefrime('D')"/>
-                <input style="padding: 5; " id="" type="button" value="H4" onclick="setTimefrime('H4')"/>
+                <input style="padding: 5; " id="" type="button" value="H4" onclick="setTimefrime('240')"/>
                 <input style="padding: 5; " id="" type="button" value="H1" onclick="setTimefrime('H1')"/>
-                <input style="padding: 5; " id="" type="button" value="M30" onclick="setTimefrime('M30')"/>
-                <input style="padding: 5; " id="" type="button" value="M15" onclick="setTimefrime('M15')"/>
-                <input style="padding: 5; " id="" type="button" value="M5" onclick="setTimefrime('M5')"/>
-                <input style="padding: 5; " id="" type="button" value="M1" onclick="setTimefrime('M1')"/> 
+                <input style="padding: 5; " id="" type="button" value="M30" onclick="setTimefrime('30')"/>
+                <input style="padding: 5; " id="" type="button" value="M15" onclick="setTimefrime('15')"/>
+                <input style="padding: 5; " id="" type="button" value="M5" onclick="setTimefrime('5')"/>
+                <input style="padding: 5; " id="" type="button" value="M1" onclick="setTimefrime('1')"/> 
                 <em>&nbsp;&nbsp;После изменния TF, надо отключить и включить график для обновления TF</em>
                 <br />
-                <input type="range" id="chartWidth" min="500" max="1500" value="500" step="50" style="margin: 10 0 0;"  onchange="setChartWidth()"/>
-                <em style="">&nbsp;&nbsp;Ширина графиков</em>
+				Графики: &nbsp;
+                <input type="range" id="chartWidth" min="500" max="1500" value="500" step="30" style="margin: 10 0 0;"  onchange="setChartWidth()" style="width: 40px;"/>
+                <em style="">&nbsp;&nbsp;Ширина</em>
                 &nbsp;&nbsp;
-                <input type="range" id="chartHeight" min="300" max="700" value="300" step="50" style="margin: 10 0 0;" onchange="setChartHeight()"/>
-                <em style="">&nbsp;&nbsp;Выоста графиков</em>
+                <input type="range" id="chartHeight" min="300" max="700" value="300" step="30" style="margin: 10 0 0;" onchange="setChartHeight()" style="width: 40px;"/>
+                <em style="">&nbsp;&nbsp;Выоста</em>
             </td>
         </tr>
     </table>
@@ -88,7 +89,7 @@
                 	<p><input type="button" value="BCHUSDT" onclick="kripto('BCHUSDT')"/></p>
                 	<p><input type="button" value="ETHUSDT" onclick="kripto('ETHUSDT')"/></p>
                 	<p><input type="button" value="ETCUSDT" onclick="kripto('ETCUSDT')"/></p>
-                	<p><input type="button" value="LTCUSDT" onclick="kripto('LTCUSDT)"/></p>
+                	<p><input type="button" value="LTCUSDT" onclick="kripto('LTCUSDT')"/></p>
                 	<p><input type="button" value="XRPUSDT" onclick="kripto('XRPUSDT')"/></p>
                 	<p><input type="button" value="EOSUSDT" onclick="kripto('EOSUSDT')"/></p>
                 	<p><input type="button" value="BNBUSDT" onclick="kripto('BNBUSDT')"/></p>
@@ -117,7 +118,7 @@
 	                <p><input type="button" value="DASHUSDT" onclick="kripto('DASHUSDT')"/></p>
 	                <p><input type="button" value="EGLDUSDT" onclick="kripto('EGLDUSDT')"/></p>
 	                
-	                <p><input type="button" value="WAVEUSDT" onclick="kripto('WAVEUSDT')"/></p>
+	                <p><input type="button" value="WAVESUSDT" onclick="kripto('WAVESUSDT')"/></p>
 	                <p><input type="button" value="AAVEUSDT" onclick="kripto('AAVEUSDT')"/></p>
 	                <p><input type="button" value="XTZUSDT" onclick="kripto('XTZUSDT')"/></p>
 	                <p><input type="button" value="FLOWUSDT" onclick="kripto('FLOWUSDT')"/></p>       
@@ -224,7 +225,7 @@
                 <div style="display: none; float: left; margin: 5 5 30 5;" id="DASHUSDT"></div>
                 <div style="display: none; float: left; margin: 5 5 30 5;" id="EGLDUSDT"></div>
                 
-                <div style="display: none; float: left; margin: 5 5 30 5;" id="WAVEUSDT"></div>
+                <div style="display: none; float: left; margin: 5 5 30 5;" id="WAVESUSDT"></div>
                 <div style="display: none; float: left; margin: 5 5 30 5;" id="AAVEUSDT"></div>
                 <div style="display: none; float: left; margin: 5 5 30 5;" id="XTZUSDT"></div>
                 <div style="display: none; float: left; margin: 5 5 30 5;" id="FLOWUSDT"></div>             

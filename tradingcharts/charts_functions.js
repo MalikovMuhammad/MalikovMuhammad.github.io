@@ -1,7 +1,7 @@
 ﻿           function valyuta(pair) {
                 if (document.getElementById(pair).style.display == "none") {
                     document.getElementById(pair).style.display = "block";
-                    document.getElementById(pair).innerHTML = '<div class="tradingview-widget-container">  <div id="tradingview_'+pair+'"></div>  <div class="tradingview-widget-copyright">	<b style="color:black;">График '+pair+' '+ timeframe +' </b>  </div></div>';                
+                    document.getElementById(pair).innerHTML = '<div class="tradingview-widget-container"> <div class="tradingview-widget-copyright"><b style="color:black;">График '+pair+' '+ timeframe +' </b></div><div id="tradingview_'+pair+'"></div></div>';                
                     new TradingView.widget({
                         "autosize": true,
                         "symbol": "FOREXCOM:"+pair,
@@ -29,7 +29,7 @@
            function kripto(pair) {
                 if (document.getElementById(pair).style.display == "none") {
                     document.getElementById(pair).style.display = "block";
-                    document.getElementById(pair).innerHTML = '<div class="tradingview-widget-container">  <div id="tradingview_'+pair+'"></div>  <div class="tradingview-widget-copyright">	<b style="color:black;">График '+pair+' '+ timeframe +'  </b>  </div></div>';                
+                    document.getElementById(pair).innerHTML = '<div class="tradingview-widget-container"><div class="tradingview-widget-copyright"><b style="color:black;">График '+pair+' '+ timeframe +'  </b></div><div id="tradingview_'+pair+'"></div></div>';                
                     new TradingView.widget({
                         "autosize": true,
                         "symbol": "BINANCE:"+pair,
@@ -58,7 +58,7 @@
     function setChartWidth(){
         var width = document.getElementById('chartWidth').value;
         
-        document.getElementById('EURUSD').style.width = width;
+        document.getElementById('EURUSD').style.width = width; 
         document.getElementById('GBPUSD').style.width = width;
         document.getElementById('AUDUSD').style.width = width;
         document.getElementById('NZDUSD').style.width = width;
@@ -93,43 +93,43 @@
         
         document.getElementById('CHFJPY').style.width = width;
         
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
+        document.getElementById('BTCUSDT').style.width = width;
+        document.getElementById('BCHUSDT').style.width = width;
+        document.getElementById('ETHUSDT').style.width = width;
+        document.getElementById('ETCUSDT').style.width = width;
+        document.getElementById('LTCUSDT').style.width = width;
+        document.getElementById('XRPUSDT').style.width = width;
+        document.getElementById('EOSUSDT').style.width = width;
+        document.getElementById('BNBUSDT').style.width = width;
+        document.getElementById('SOLUSDT').style.width = width;
+        document.getElementById('ADAUSDT').style.width = width;
         
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
+        document.getElementById('LUNAUSDT').style.width = width;
+        document.getElementById('GALAUSDT').style.width = width;
+        document.getElementById('TRXUSDT').style.width = width;
+        document.getElementById('DOTUSDT').style.width = width;
+        document.getElementById('MATICUSDT').style.width = width;
+        document.getElementById('SANDUSDT').style.width = width;
+        document.getElementById('MANAUSDT').style.width = width;
+        document.getElementById('FTMUSDT').style.width = width;
+        document.getElementById('LINKUSDT').style.width = width;
+        document.getElementById('DOGEUSDT').style.width = width;
         
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
+        document.getElementById('ATOMUSDT').style.width = width;
+        document.getElementById('XLMUSDT').style.width = width;
+        document.getElementById('NEOUSDT').style.width = width;
+        document.getElementById('FILUSDT').style.width = width;
+        document.getElementById('UNIUSDT').style.width = width;
+        document.getElementById('AXSUSDT').style.width = width;
+        document.getElementById('ZECUSDT').style.width = width;
+        document.getElementById('XMRUSDT').style.width = width;
+        document.getElementById('DASHUSDT').style.width = width;
+        document.getElementById('EGLDUSDT').style.width = width;
         
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
-        document.getElementById('USDT').style.width = width;
+        document.getElementById('WAVESUSDT').style.width = width;
+        document.getElementById('AAVEUSDT').style.width = width;
+        document.getElementById('XTZUSDT').style.width = width;
+        document.getElementById('FLOWUSDT').style.width = width;
         
     }
     

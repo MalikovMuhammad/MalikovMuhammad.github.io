@@ -210,8 +210,18 @@
         document.getElementById('XTZUSDT').style.height = height;
         document.getElementById('FLOWUSDT').style.height = height;
     }
-           
-           
+
+
+		const kriptoPairs = ['BTCUSDT', 'BCHUSDT', 'ETHUSDT', 'ETCUSDT', 'LTCUSDT', 'XRPUSDT', 'EOSUSDT', 'BNBUSDT', 'SOLUSDT', 'ADAUSDT', 'LUNAUSDT', 'GALAUSDT', 'TRXUSDT', 'DOTUSDT', 'MATICUSDT', 'SANDUSDT', 'MANAUSDT', 'FTMUSDT', 'LINKUSDT', 'DOGEUSDT', 'ATOMUSDT', 'XLMUSDT', 'NEOUSDT', 'FILUSDT', 'UNIUSDT', 'AXSUSDT', 'ZECUSDT', 'XMRUSDT', 'DASHUSDT', 'EGLDUSDT', 'WAVESUSDT', 'AAVEUSDT', 'XTZUSDT', 'FLOWUSDT'];
+		const valyutaPairs = ['EURUSD', 'GBPUSD', 'AUDUSD', 'NZDUSD', 'USDCAD', 'USDCHF', 'USDJPY', 'EURGBP', 'EURAUD', 'EURNZD', 'EURCAD', 'EURCHF', 'EURJPY', 'GBPAUD', 'GBPNZD', 'GBPCAD', 'GBPCHF', 'GBPJPY', 'AUDNZD', 'AUDCAD', 'AUDCHF', 'AUDJPY', 'NZDCAD', 'NZDCHF', 'NZDJPY', 'CADCHF', 'CADJPY', 'CHFJPY'];
+
+		function kriptoAll(){
+			kriptoPairs.forEach(element => kripto(element));
+		}
+		
+		function valyutaAll(){
+			valyutaPairs.forEach(element => valyuta(element));
+		}
            
            
            

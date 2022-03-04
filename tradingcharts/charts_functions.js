@@ -138,6 +138,39 @@
         var height = document.getElementById('chartHeight').value;
         
         document.getElementById('EURUSD').style.height = height;
+        document.getElementById('GBPUSD').style.height = height;
+        document.getElementById('AUDUSD').style.height = height;
+        document.getElementById('NZDUSD').style.height = height;
+        document.getElementById('USDCAD').style.height = height;
+        document.getElementById('USDCHF').style.height = height;
+        document.getElementById('USDJPY').style.height = height;
+        
+        document.getElementById('EURGBP').style.height = height;
+        document.getElementById('EURAUD').style.height = height;
+        document.getElementById('EURNZD').style.height = height;
+        document.getElementById('EURCAD').style.height = height;
+        document.getElementById('EURCHF').style.height = height;
+        document.getElementById('EURJPY').style.height = height;
+        
+        document.getElementById('GBPAUD').style.height = height;
+        document.getElementById('GBPNZD').style.height = height;
+        document.getElementById('GBPCAD').style.height = height;
+        document.getElementById('GBPCHF').style.height = height;
+        document.getElementById('GBPJPY').style.height = height;
+        
+        document.getElementById('AUDNZD').style.height = height;
+        document.getElementById('AUDCAD').style.height = height;
+        document.getElementById('AUDCHF').style.height = height;
+        document.getElementById('AUDJPY').style.height = height;
+        
+        document.getElementById('NZDCAD').style.height = height;
+        document.getElementById('NZDCHF').style.height = height;
+        document.getElementById('NZDJPY').style.height = height;
+        
+        document.getElementById('CADCHF').style.height = height;
+        document.getElementById('CADJPY').style.height = height;
+        
+        document.getElementById('CHFJPY').style.height = height;
     }
            
            

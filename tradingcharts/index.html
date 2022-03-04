@@ -1,5 +1,17 @@
 <html>
 <head>
+    <style>
+        body {
+            margin:0;
+        }
+        .sticky {
+            position: fixed;
+            height: ;
+            margin: 0;
+            background-color: white;
+            z-index: 999999;
+        }
+    </style>
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
     <script type="text/javascript" src="charts_functions.js"></script>
 	<script type="text/javascript">    
@@ -22,14 +34,25 @@
                     document.getElementById('btn_hide_pairs').value = 'Показать все инструменты';
                     document.getElementById('HideBtnCol').colspan = 1;
                 }     
-	       }       
-    </script>	
+	       }
+           
+           window.onscroll = function() {
+                if (window.pageYOffset > 60) {
+                    document.getElementById("myHeader").classList.add("sticky");
+                } else {
+                    document.getElementById("myHeader").classList.remove("sticky");
+                }  
+                
+           };
+    </script>
+    	
 </head>
 
 <body>
-	<table border="0">
-		<tr>
-            <td id="HideBtnCol" colspan="2" style="width:40px; vertical-align: top; text-align: left; padding: 5 15 10;">
+    <div id="myHeader">    
+    <table>
+        <tr>
+            <td id="HideBtnCol" colspan="2" style="width:40px; vertical-align: Center; text-align: left; padding: 5 15 10;">
                 <input style="padding: 10 5; " id="btn_hide_pairs" type="button" value="Скрить все инструменты" onclick="hide()"/>
             </td>
             <td style="vertical-align: top; text-align: left; padding: 10 15 10;">
@@ -44,8 +67,18 @@
                 <input style="padding: 5; " id="" type="button" value="M5" onclick="setTimefrime('M5')"/>
                 <input style="padding: 5; " id="" type="button" value="M1" onclick="setTimefrime('M1')"/> 
                 <em>&nbsp;&nbsp;После изменния TF, надо отключить и включить график для обновления TF</em>
+                <br />
+                <input type="range" id="chartWidth" min="300" max="1980" value="420" step="10" style="margin: 10 0 0;" onchange="setChartWidth()"/>
+                <em style="">&nbsp;&nbsp;Ширина графиков</em>
+                &nbsp;&nbsp;
+                <input type="range" id="chartHeight" min="200" max="1000" value="300" step="10" style="margin: 10 0 0;" onchange="setChartHeight()"/>
+                <em style="">&nbsp;&nbsp;Выоста графиков</em>
             </td>
         </tr>
+    </table>
+    </div>
+    
+    <table>		
         <tr>
             <!-- Криптовалютные Кнопки -->
 		<td id="pairs_col1" style="display:; width: 20px; border-left: 1px dotted black; border-right: 1px dotted black; border-top: 1px dotted black; vertical-align: top; padding: 10 5 5;">			
@@ -90,8 +123,8 @@
 		</td>
             <!-- Валютные Кнопки -->
             <td id="pairs_col2" style="display:; width: 20px; border-right: 1px dotted black; border-top: 1px dotted black; vertical-align: top; padding: 10 5 5;">
-		<p align="center">Валюты:</p>                
-		<p><input type="button" value="EURUSD" onclick="valyuta('EURUSD')"/></p>            
+                <p align="center">Валюты:</p>                
+                <p><input type="button" value="EURUSD" onclick="valyuta('EURUSD')"/></p>            
                 <p><input type="button" value="GBPUSD" onclick="valyuta('GBPUSD')"/></p>
                 <p><input type="button" value="AUDUSD" onclick="valyuta('AUDUSD')"/></p>
                 <p><input type="button" value="NZDUSD" onclick="valyuta('NZDUSD')"/></p>
@@ -124,7 +157,7 @@
                 
             </td>
             <!-- Валютные графики -->
-			<td style="vertical-align: top; padding: 5 10 5 0;">
+			<td style="vertical-align: top; padding: 5 10 5 0; width:;">
                 <div style="display: none; float: left; margin: 5 5 5 5;" id="EURUSD"></div>
                 <div style="display: none; float: left; margin: 5 5 5 5;" id="GBPUSD"></div>
                 <div style="display: none; float: left; margin: 5 5 5 5;" id="AUDUSD"></div>

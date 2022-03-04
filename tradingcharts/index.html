@@ -13,12 +13,14 @@
                 if (document.getElementById('pairs_col1').style.display == "none") {
                     document.getElementById('pairs_col1').style.display = "";
                     document.getElementById('pairs_col2').style.display = "";
-                    document.getElementById('btn_hide_pairs').value = 'Скрить все инструменты';                                         
+                    document.getElementById('btn_hide_pairs').value = 'Скрить все инструменты';
+                    document.getElementById('HideBtnCol').colspan = 2;                                         
                 }           
                 else {
                     document.getElementById('pairs_col1').style.display = "none";
                     document.getElementById('pairs_col2').style.display = "none";
                     document.getElementById('btn_hide_pairs').value = 'Показать все инструменты';
+                    document.getElementById('HideBtnCol').colspan = 1;
                 }     
 	       }       
     </script>	
@@ -27,7 +29,7 @@
 <body>
 	<table border="0">
 		<tr>
-            <td colspan="2" style="width:40px; vertical-align: top; text-align: left; padding: 5 15 10;">
+            <td id="HideBtnCol" colspan="2" style="width:40px; vertical-align: top; text-align: left; padding: 5 15 10;">
                 <input style="padding: 10 5; " id="btn_hide_pairs" type="button" value="Скрить все инструменты" onclick="hide()"/>
             </td>
             <td style="vertical-align: top; text-align: left; padding: 10 15 10;">

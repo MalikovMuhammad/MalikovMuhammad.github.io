@@ -57,7 +57,8 @@
     //Изменение ширины графиков
     function setChartWidth(){
         var width = document.getElementById('chartWidth').value;
-        
+        document.getElementById('ChartWidthInfo').innerHTML = width+'px';
+		
         document.getElementById('EURUSD').style.width = width; 
         document.getElementById('GBPUSD').style.width = width;
         document.getElementById('AUDUSD').style.width = width;
@@ -136,7 +137,8 @@
     //Изменение высоты графиков
     function setChartHeight(){
         var height = document.getElementById('chartHeight').value;
-        
+        document.getElementById('ChartHeightInfo').innerHTML = height+'px';
+		
         document.getElementById('EURUSD').style.height = height;
         document.getElementById('GBPUSD').style.height = height;
         document.getElementById('AUDUSD').style.height = height;

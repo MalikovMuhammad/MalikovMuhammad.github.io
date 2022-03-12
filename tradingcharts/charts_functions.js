@@ -6,7 +6,7 @@
                         "autosize": true,
                         "symbol": "FOREXCOM:"+pair,
                         "interval": timeframe,
-                        "timezone": "Asia/Bahrain",
+                        "timezone": "Europe/Riga",
                         "theme": "light",
                         "style": "1",
                         "locale": "ru",
@@ -34,7 +34,7 @@
                         "autosize": true,
                         "symbol": "BINANCE:"+pair,
                         "interval": timeframe,
-                        "timezone": "Asia/Bahrain",
+                        "timezone": "Europe/Riga",
                         "theme": "light",
                         "style": "1",
                         "locale": "ru",
@@ -224,8 +224,11 @@
 		function valyutaAll(){
 			valyutaPairs.forEach(element => valyuta(element));
 		}
-           
-           
+
+
+	//NodeJS
+	var fs = require('fs');
+	fs.writeFile('text.txt','Hello');
            
            
            

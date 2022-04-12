@@ -4,9 +4,9 @@
                     document.getElementById(pair).innerHTML = '<div class="tradingview-widget-container"> <div class="tradingview-widget-copyright"><b style="color:black;">График '+pair+' '+ timeframe +' </b></div><div id="tradingview_'+pair+'"></div></div>';                
                     new TradingView.widget({
                         "autosize": true,
-                        "symbol": "FOREXCOM:"+pair,
+                        "symbol": "FX:"+pair,
                         "interval": timeframe,
-                        "timezone": "Europe/Riga",
+                        "timezone": "Asia/Karachi",
                         "theme": "light",
                         "style": "1",
                         "locale": "ru",

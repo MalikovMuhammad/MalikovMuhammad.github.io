@@ -27,7 +27,7 @@
                     document.getElementById('pairs_col1').style.display = "";
                     document.getElementById('pairs_col2').style.display = "";
                     document.getElementById('btn_hide_pairs').value = 'Скрить все инструменты';
-                    document.getElementById('HideBtnCol').colspan = 2;                                         
+                    document.getElementById('HideBtnCol').colspan = 2;    
                 }           
                 else {
                     document.getElementById('pairs_col1').style.display = "none";
@@ -46,7 +46,40 @@
                 
            };
     </script>
-    	
+    
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", () => {
+            url = window.location.href;
+            if (url.includes('EURUSD')) { valyuta('EURUSD');}
+            if (url.includes('GBPUSD')) { valyuta('GBPUSD');}
+            if (url.includes('AUDUSD')) { valyuta('AUDUSD');}
+            if (url.includes('NZDUSD')) { valyuta('NZDUSD');}
+            if (url.includes('USDCAD')) { valyuta('USDCAD');}
+            if (url.includes('USDCHF')) { valyuta('USDCHF');}
+            if (url.includes('USDJPY')) { valyuta('USDJPY');}
+            if (url.includes('EURGBP')) { valyuta('EURGBP');}
+            if (url.includes('EURAUD')) { valyuta('EURAUD');}
+            if (url.includes('EURNZD')) { valyuta('EURNZD');}
+            if (url.includes('EURCAD')) { valyuta('EURCAD');}
+            if (url.includes('EURCHF')) { valyuta('EURCHF');}
+            if (url.includes('EURJPY')) { valyuta('EURJPY');}
+            if (url.includes('GBPAUD')) { valyuta('GBPAUD');}
+            if (url.includes('GBPNZD')) { valyuta('GBPNZD');}
+            if (url.includes('GBPCAD')) { valyuta('GBPCAD');}
+            if (url.includes('GBPCHF')) { valyuta('GBPCHF');}
+            if (url.includes('GBPJPY')) { valyuta('GBPJPY');}
+            if (url.includes('AUDNZD')) { valyuta('AUDNZD');}
+            if (url.includes('AUDCAD')) { valyuta('AUDCAD');}
+            if (url.includes('AUDCHF')) { valyuta('AUDCHF');}
+            if (url.includes('AUDJPY')) { valyuta('AUDJPY');}
+            if (url.includes('NZDCAD')) { valyuta('NZDCAD');}
+            if (url.includes('NZDCHF')) { valyuta('NZDCHF');}
+            if (url.includes('NZDJPY')) { valyuta('NZDJPY');}
+            if (url.includes('CADCHF')) { valyuta('CADCHF');}
+            if (url.includes('CADJPY')) { valyuta('CADJPY');}
+            if (url.includes('CHFJPY')) { valyuta('CHFJPY');}
+        });
+    </script>	
 </head>
 
 <body>
@@ -138,7 +171,7 @@
                 <p><input type="button" value="EURGBP" onclick="valyuta('EURGBP')"/></p>
                 <p><input type="button" value="EURAUD" onclick="valyuta('EURAUD')"/></p>
                 <p><input type="button" value="EURNZD" onclick="valyuta('EURNZD')"/></p>
-                
+    
                 <p><input type="button" value="EURCAD" onclick="valyuta('EURCAD')"/></p>
                 <p><input type="button" value="EURCHF" onclick="valyuta('EURCHF')"/></p>
                 <p><input type="button" value="EURJPY" onclick="valyuta('EURJPY')"/></p>
@@ -235,6 +268,8 @@
 		</tr>
 	</table>
 </body>
+
+
 
 </html>
 

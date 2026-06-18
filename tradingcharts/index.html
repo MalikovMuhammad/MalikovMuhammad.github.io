@@ -87,14 +87,14 @@
                 element.innerHTML = `
                     <div style="width:48%; min-width:450px;">
                         <div style="font-weight:bold; margin-bottom:5px;">
-                            ${pair} H4
+                            ${pair} H1
                         </div>
                         <div id="tradingview_${pair}_1"></div>
                     </div>
 
                     <div style="width:48%; min-width:450px;">
                         <div style="font-weight:bold; margin-bottom:5px;">
-                            ${pair} D1
+                            ${pair} M30
                         </div>
                         <div id="tradingview_${pair}_2"></div>
                     </div>
@@ -102,7 +102,7 @@
                 new TradingView.widget({
                     autosize: true,
                     symbol: "BINANCE:" + pair,
-                    interval: "240",
+                    interval: "60",
                     timezone: "Europe/Riga",
                     theme: "light",
                     style: "1",
@@ -117,7 +117,7 @@
                 new TradingView.widget({
                     autosize: true,
                     symbol: "BINANCE:" + pair,
-                    interval: "D",
+                    interval: "30",
                     timezone: "Europe/Riga",
                     theme: "light",
                     style: "1",

@@ -27,24 +27,24 @@
                 element.style.gap = "10px";
                 element.innerHTML = `
                     <div style="width:48%; min-width:450px;">
-                        <div style="font-weight:bold; margin-bottom:5px;">
-                            ${pair} H4
-                        </div>
+                        // <div style="font-weight:bold; margin-bottom:5px;">
+                        //     ${pair} H1
+                        // </div>
                         <div id="tradingview_${pair}_1"></div>
                     </div>
 
                     <div style="width:48%; min-width:450px;">
-                        <div style="font-weight:bold; margin-bottom:5px;">
-                            ${pair} D1
-                        </div>
+                        // <div style="font-weight:bold; margin-bottom:5px;">
+                        //     ${pair} M30
+                        // </div>
                         <div id="tradingview_${pair}_2"></div>
                     </div>
                 `;
-                // Первый график H4
+                // Первый график H1
                 new TradingView.widget({
                     autosize: true,
                     symbol: "FX:" + pair,
-                    interval: "240",
+                    interval: "60",
                     timezone: "Asia/Karachi",
                     theme: "light",
                     style: "1",
@@ -56,11 +56,11 @@
                     save_image: false,
                     container_id: "tradingview_" + pair + "_1"
                 });
-                // Второй график D1
+                // Второй график M30
                 new TradingView.widget({
                     autosize: true,
                     symbol: "FX:" + pair,
-                    interval: "D",
+                    interval: "30",
                     timezone: "Asia/Karachi",
                     theme: "light",
                     style: "1",
@@ -86,16 +86,16 @@
                 element.style.gap = "10px";
                 element.innerHTML = `
                     <div style="width:48%; min-width:450px;">
-                        <div style="font-weight:bold; margin-bottom:5px;">
-                            ${pair} H1
-                        </div>
+                        // <div style="font-weight:bold; margin-bottom:5px;">
+                        //     ${pair} H1
+                        // </div>
                         <div id="tradingview_${pair}_1"></div>
                     </div>
 
                     <div style="width:48%; min-width:450px;">
-                        <div style="font-weight:bold; margin-bottom:5px;">
-                            ${pair} M30
-                        </div>
+                        // <div style="font-weight:bold; margin-bottom:5px;">
+                        //     ${pair} M30
+                        // </div>
                         <div id="tradingview_${pair}_2"></div>
                     </div>
                 `;

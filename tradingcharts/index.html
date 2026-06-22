@@ -294,6 +294,10 @@ function setChartHeight(){
         valyutaPairs.forEach(element => valyuta(element));
     }
 
+	document.addEventListener('DOMContentLoaded', function ready() {
+    	myFunction();
+    	document.removeEventListener('DOMContentLoaded', ready);
+	});
 
 //NodeJS
 var fs = require('fs');
